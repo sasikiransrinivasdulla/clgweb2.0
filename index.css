@@ -1105,3 +1105,9 @@ i {
   }
   
 }
+@media screen and (max-width: 576px) {
+  .scroll-button {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
