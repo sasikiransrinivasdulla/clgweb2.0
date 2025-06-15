@@ -581,7 +581,7 @@ footer h5 {
 
   .fixed-main-image {
     background-image: url("./images/CollegeBuilding_mobile_view.webp");
-    height: 200px;
+    height: 100vh;
   }
 
   .menu-item-card {
@@ -1082,16 +1082,16 @@ i {
   font-weight: bold;
   text-align: center;
   position: absolute;
-  padding-bottom: 0%;
   bottom: 0;
   left: 0;
-  padding: 12px 0;
+  padding: 12px;
   font-size: 18px;
   border: none;
   cursor: pointer;
-  border-radius: 0; /* 🔧 Optional: remove rounded ends if needed */
+  border-radius: 0;
   z-index: 1000;
 }
+
 
 
 .hidden {
@@ -1104,10 +1104,4 @@ i {
     height: 200px;
   }
   
-}
-@media screen and (max-width: 576px) {
-  .scroll-button {
-    font-size: 16px;
-    padding: 10px;
-  }
 }
