@@ -20,6 +20,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="image" href="./images/contactbg.webp" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap"
       rel="stylesheet"
@@ -1021,19 +1022,24 @@
       </div>
     </div>
 
-    <div class="container-fluid fixed-main-image ios-strech-fix w-100 p-0" style="position: relative; height: 100vh;">
-      <div class="shadow-layer p-0" style="position: absolute; width: 100%; height: 100%;">
-          <!-- <h1 class="clg-title">SRI VASAVI ENGINEERING COLLEGE</h1> -->
-      </div>
-      
+    <div class="container-fluid fixed-main-image ios-strech-fix w-100 p-0" style="position: relative; height: 100vh; overflow: hidden;">
+  
+      <!-- ✅ LCP optimized image -->
+      <img src="./images/CollegeBuilding1_cehj8v.webp" alt="College Background" 
+          style="width: 100%; height: 100%; object-fit: cover;" 
+          fetchpriority="high"
+          decoding="async" 
+          loading="eager" />
+
       <!-- Scroll Button -->
-      <button id="exploreVasaviButton" class="scroll-button">
+      <button id="exploreVasaviButton" class="scroll-button" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); z-index: 2;">
         Explore Vasavi 
         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="ml-2 bi bi-caret-down-fill" viewBox="0 0 16 16">
             <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 1-1.506 0z"/>
         </svg>
-    </button>
-  </div>
+      </button>
+    </div>
+
   
   
 
